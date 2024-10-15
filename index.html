@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Thanusha showcasing projects, skills, and contact information.">
+    <meta name="keywords" content="portfolio, web developer, projects, skills, contact">
+    <meta name="author" content="Thanusha Kugananthan">
+    <title>Thanusha - AI Engineer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/scripts.js"></script>
+</head>
+<body>
+    <div class="layout">
+        <aside id="about">
+            
+            <div class="profile-pic-container">
+                <h1>Thanusha Kugananthan</h1>
+            </div>
+            <p>
+                Hello there!  My journey has taken me through roles like Research Assistant, Research Engineer, Application Engineer, System Analyst, and Data Scientist, each adding a new thread to my rich tapestry of skills.
+                I’m on an exciting new path as I transition into an AI Engineer role, driven by a passion to spark technological breakthroughs. 
+                
+                When I’m not immersed in tech, you’ll find me hiking through nature or lost in the pages of a great book—activities that inspire my creativity and problem-solving prowess.
+
+            </p>
+        </aside>
+
+        <main>
+            <nav id="tabs">
+                <ul>
+                    <li><a href="#" data-content="projects" class="tab-link">PROJECTS</a></li>
+                    <li><a href="#" data-content="contact" class="tab-link">CONTACT</a></li>
+                    <li><a href="#" data-content="blog" class="tab-link">BLOG</a></li>
+                </ul>
+            </nav>
+
+            <section id="content">
+                <div id="projects-content" class="tab-content">
+                    <h2>Projects</h2>
+                    <div class="project-grid">
+                        <div class="project-card">
+                            <h3>Credit Card Fraud Detection</h3>
+                            <img src="Images\Credit_card_fraud.png" alt="Credit Card Fraud Detection" width="300", height="300">
+                            <p>
+                                Credit card fraud detection project is designed to classify transactions as fraudulent or non-fraudulent using machine learning techniques. 
+                                The project leverages Python, Docker, Streamlit, and MLFlow to build and deploy the model. It uses a dataset sourced from Kaggle, 
+                                which involves feature transformation through principal component analysis and handling data imbalance with SMOTE. Categorical features are encoded for model training.
+                                Three predictive models are compared: Linear Regression, Gradient Boosting, and Random Forest. The Gradient Boosting Algorithm achieves the highest accuracy at 95%, 
+                                demonstrating its effectiveness for this task. The project includes interactive visualizations using Streamlit to display model performance and other insights.
+                            </p>
+                            <a href="https://github.com/Thanu18/Credit_card_Fraud" target="_blank"  class="button">View on GitHub</a>
+                        </div>
+                        <div class="project-card">
+                            <h3>GenAI-Finder APP</h3>
+                            <img src="Images/GebAi.png" alt="GenAI-Finder APP", width="300", height="300">
+                            <p>
+                                Find the Answers is a Streamlit application that leverages Google’s Generative AI to analyze uploaded images and generate responses based on user prompts. 
+                                This app utilizes the Gemini Pro Vision model from Google’s API to provide insights and answers related to the content of the uploaded image.
+                            </p>
+                            <a href="https://github.com/Thanu18/Finder/tree/main" target="_blank" class="button">View on GitHub</a>
+                        </div>
+                        <div class="project-card">
+                            <h3>Bank Transaction Fraud</h3>
+                            <img src="Images/Bank_transaction.png" alt="Bank Transaction Fraud", width="300", height="300">
+                            <p>
+                                The dataset features transactions from 1000 customers and 800 merchants, including both legitimate and fraudulent transactions.
+                                Key steps include balancing the data through oversampling, engineering features, and scaling. Logistic Regression and XGBoost models were trained and evaluated, 
+                                with XGBoost showing better performance after hyperparameter tuning. Models and preprocessing pipelines were saved and deployed via a Flask application on Azure, enabling real-time fraud detection.
+                            </p>
+                            <a href="https://github.com/Thanu18/Bank_Fraud" target="_blank" class="button">View on GitHub</a>
+                        </div>
+                        <div class="project-card">
+                            <h3>Cancer Detection Image Classification with Deep Learning</h3>
+                            <img src="Images/Cancer_detection.png" alt="Cancer Detection Image Classification", width="300", height="300">
+                            <p>
+                                This project is a Flask web application for classifying medical images into HP and SSA categories using pre-trained DenseNet, ResNet50, and Fully Connected Convolutional Network (FNN) models.
+                                It is deployed on AWS. Installation involves setting up Python 3.8+, Docker, and AWS tools. The application can be run locally with Docker by building the image and accessing it via http://localhost:5000. 
+                                The project includes data preprocessing with SMOTE to address class imbalance and uses various models for classification.
+                                For troubleshooting, ensure Pillow is installed and verify Dockerfile and AWS configurations. The project saves and reloads models for predictions using standard methods.
+                            </p>
+                            <a href="https://github.com/Thanu18/Cancer_Detection_Image_Classification" target="_blank" class="button">View on GitHub</a>
+                        </div>
+                        <div class="project-card">
+                            <h3>Covid-19 Tweets sentiment Analysis</h3>
+                            <img src="Images\Sentiment analysis.png" alt="Covid-19 Sentiment Analysis", width="300", height="300">
+                            <p>
+                                This project is a Tweet sentiment Analysis during Covid-19. Compared Baseline Models(Using Machine Learning algorithms: Naive Bayes, Logestic Regrssion and KNN).
+                                In Comparison of theser algorithms Logistic Regression was able to produce 77% of accuracy. BERT Transformer model reachd 79%. Chose the Bidirectional LSTM model
+                                which produced 86.13% accuracy due to computational retrictions and created Flask APP prediction application. And deployed in AWS Elastic Beanstalk
+                            </p>
+                            <a href="https://github.com/Thanu18/Corona-19-Tweets-sentiment-Analysis" target="_blank" class="button">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="contact-content" class="tab-content">
+                    <h2>Contact</h2>
+                    <p>You can reach me via <a href="mailto:thenu_18@outlook.com">email</a> or connect with me on <a href="https://linkedin.com/in/thanusha-kugananthan-a276ba9b" target="_blank">LinkedIn</a>.</p>
+                </div>
+                <div id="blog-content" class="tab-content">
+                    <h2>Blog</h2>
+                    <p>Welcome to my blog! Here, I share insights, tutorials, and personal reflections on technology, AI, and data science. Stay tuned for updates.</p>
+                    <article>
+                        <h3><a href="https://medium.com/@thenu_/finder-app-with-gemini-pro-517643ea536c" target="_blank">Answer Finder</a></h3>
+                        <p>This is a Answer finder for the uplaoded picture created using Gemini-pro and Geminmi vision APIs</p>
+                    </article>
+                    <article>
+                        <h3><a href="https://medium.com/@thenu_/predicting-house-prices-and-deploying-the-dockerize-flask-app-with-github-actions-to-heroku-a1fa188df901" target="_blank">Predicting House Prices</a></h3>
+                        <p>Predicting the house price with Machine Learning Algorithm, containerizing with Docker and Deploying in Heroku.</p>
+                    </article>
+                    <article>
+                        <h3><a href="https://medium.com/@thenu_/sentiment-analysis-with-lstm-rnn-and-transformer-models-5c7b16cac936" target="_blank">Sentiment Analysis Model Comparison</a></h3>
+                        <p>Sentiment Analysis for Covid-19 Tweets model comparisons. Preprocessing, Model Building and Predicting</p>
+                    </article>
+                    <!-- Add more blog posts here -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+   
+</body>
+</html>
